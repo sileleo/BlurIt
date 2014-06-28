@@ -55,8 +55,10 @@ body {
 
 .carousel{
   background-color: #666;
+  box-sizing: border-box;
   color: white;
   height: 400px;
+  padding-top: 260px;
 }
 
 a {
@@ -89,7 +91,10 @@ header {
     color: #666;
     line-height: 1;
     margin-bottom: 0.2em;
-    width: 540px;   
+    width: 540px; 
+    span{
+      color: rgb(90, 182, 209);
+    }  
   }
   h2{
     color: #9ddcff;
@@ -104,6 +109,11 @@ header {
   position: relative;
   width: 940px;
   margin: 0 auto;
+}
+
+.first-description{
+  padding: 40px 0;
+  text-align: center;
 }
 
 #main-content {
@@ -339,12 +349,16 @@ dl dd {
 }
 
 footer {
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
+  background: #474747;
   margin-top: 40px;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 30px;
   font-size: 13px;
-  color: #aaa;
+  color: white;
+  text-align: center;
+  p{
+    margin-bottom: 0;
+  }
 }
 
 footer a {

@@ -46,10 +46,10 @@ table {
 /* LAYOUT STYLES */
 body {
   font-size: 15px;
-  line-height: 1.5; 
+  line-height: 25px; 
   background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   color: #666;
 }
 
@@ -62,9 +62,9 @@ body {
 }
 
 a {
-  color: #2879d0;
+  color: @light-blue;
   &:hover{
-    color: #2268b2;
+    text-decoration: underline;
   }
   &.white{
     color:white;
@@ -82,6 +82,10 @@ h2{
   font-size: 30px;
 }
 
+h3{
+  font-size: 18px;
+}
+
 header {
   background-color: white;
   padding-top: 25px;
@@ -89,11 +93,11 @@ header {
   h1{
     letter-spacing: -1px;
     color: #666;
+    display: inline-block;
     line-height: 1;
     margin-bottom: 0.2em;
-    width: 540px; 
     span{
-      color: rgb(90, 182, 209);
+      color: @light-blue;
     }  
   }
   h2{
@@ -102,6 +106,23 @@ header {
     line-height: 1.3;
     width: 540px;
     letter-spacing: 0;    
+  }
+  ul{
+    display: inline-block;
+    float: right;
+    list-style: none;
+    margin-top: 5px;
+    li{
+      display: inline-block;
+      padding: 0 10px;
+      a{
+        color: #666;
+        &:hover{
+          color: @light-blue;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
 
@@ -112,8 +133,11 @@ header {
 }
 
 .first-description{
-  padding: 40px 0;
+  padding: 45px 0;
   text-align: center;
+  h3{
+    font-weight: 300;
+  }
 }
 
 #main-content {

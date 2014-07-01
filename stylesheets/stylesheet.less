@@ -118,7 +118,7 @@ header {
     line-height: 1;
     margin-bottom: 0.2em;
     span{
-      color: #34798D;
+      color: @identity;
     }  
   }
   h2{
@@ -398,6 +398,18 @@ dl dd {
 }
 
 .examples{
+  .example-box{
+    background-color: silver;
+    display: inline-block;
+    height: 300px;
+    overflow: hidden;
+    width: 300px;
+    border: 6px solid white;
+    outline: 1px solid silver;
+    &+ .example-box{
+      margin-left: 40px;
+    }
+  }
   .img-wrapper{
     display: block;
     position: relative;

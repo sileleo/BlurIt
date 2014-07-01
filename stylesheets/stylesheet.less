@@ -56,9 +56,29 @@ body {
 .carousel{
   background-color: #666;
   box-sizing: border-box;
-  color: white;
-  height: 400px;
-  padding-top: 260px;
+  height: 470px;
+  overflow: hidden;
+  position: relative;
+  img{
+    width: 100%;
+  }
+  .inner{
+    position: relative;
+    .description{
+      color: #666;
+      position: absolute;
+      top: 175px;
+      h1{
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        line-height: 50px;
+        span{
+          color: #34798D;
+        }
+      }
+    }
+  }
 }
 
 a {
@@ -87,17 +107,17 @@ h3{
 }
 
 header {
-  background-color: white;
+  background-color: rgb(47, 47, 47);
   padding-top: 25px;
   padding-bottom: 10px;
   h1{
     letter-spacing: -1px;
-    color: #666;
+    color: white;
     display: inline-block;
     line-height: 1;
     margin-bottom: 0.2em;
     span{
-      color: @light-blue;
+      color: #34798D;
     }  
   }
   h2{
@@ -116,7 +136,7 @@ header {
       display: inline-block;
       padding: 0 10px;
       a{
-        color: #666;
+        color: white;
         &:hover{
           color: @light-blue;
           text-decoration: none;
@@ -126,6 +146,10 @@ header {
   }
 }
 
+xmp{
+  font-size: 12px;
+}
+
 .inner {
   position: relative;
   width: 940px;
@@ -133,6 +157,7 @@ header {
 }
 
 .first-description{
+  background: transparent url(../images/top-bg.png) center 0 no-repeat;
   padding: 45px 0;
   text-align: center;
   h3{
@@ -151,12 +176,12 @@ header {
 
 aside#sidebar {
   width: 200px;
-  padding-left: 20px;
   min-height: 504px;
-  float: right;
-  background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;
+  float: left;
+  //background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;
   font-size: 12px;
   line-height: 1.3;
+  margin-top: 25px;
 }
 
 aside#sidebar p.repo-owner,
@@ -170,7 +195,7 @@ aside#sidebar p.repo-owner a {
 
 a.button {
   width: 134px;
-  height: 58px;
+  height: 40px;
   line-height: 1.2;
   font-size: 23px;
   color: #fff;
@@ -188,11 +213,11 @@ header a.button {
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
 aside a.button {
+  color: #666;
   width: 138px;
-  padding-left: 64px;
+  padding-left: 0;
   display: block;
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
-  margin-bottom: 20px;
+  //background: transparent url(../images/download-button.png) 0 0 no-repeat;
   font-size: 21px;
 }
 
@@ -300,7 +325,6 @@ form {
   content: "///";
   color: #9ddcff;
   padding-right: 0.3em;
-  margin-left: -2em;
 }
 
 #main-content h4 {

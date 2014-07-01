@@ -396,6 +396,27 @@ dl dd {
   font-weight: 100;
 }
 
+.examples{
+  .img-wrapper{
+    display: block;
+    position: relative;
+    width: 300px;
+  }
+  .img-wrapper img{
+      max-width: 100%;
+      display: block;
+  }
+  .img-wrapper :nth-child(2){
+      display: none;
+  }
+  .img-wrapper:hover :nth-child(2){
+      display: block;
+  }
+  .img-wrapper:hover :first-child{
+      display: none;
+  }
+}
+
 footer {
   background: #474747;
   margin-top: 40px;
@@ -415,6 +436,7 @@ footer a {
 footer a:hover {
   color: #444;
 }
+
 
 /* MISC */
 .clearfix:after {
